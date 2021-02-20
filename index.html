@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>School Managment System</title>
+<link rel = "stylesheet" type = "text/css" href="./assets/style.css">	
+<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">	
+	</head>
+	<body class ="container" >
+	
+	<div class="container">
+  <div class="row">
+    <div class="col-lg"> </div>
+    <div class="col-lg-5">
+     
+	 <form >
+		<div >
+				<label for="name">Student Name</label>
+				<input type="text"class="form-control" id="name" placeholder="jo aqra" />
+				</div><br>
+				<div >
+					<label for="idNumber">Student ID</label>
+					<input type="number" class="form-control" id="idNumber"maxlength = "6" placeholder="xxxxxx" />
+				</div> <br>
+				<div >
+					<label for="gdpa">Student GDPA</label>
+					<input type="number"class="form-control" id="gdpa" placeholder="x.xx" />
+				</div><br>
+				<button type="button" id ="submit" class="btn btn-secondary">Add</button>
+			    <button type="button" id ="show" class="btn btn-secondary">Show List</button>
+			</form><br>
+			
+	 <table class="table table-bordered" id = "table" style = "display: none" >
+    <thead>
+	<tr>
+      <th >Student Name </th>
+      <th >Student ID</th>
+      <th >Student GDPA</th>
+    </tr>
+</thead>
+</table>
+    </div>
+    <div class="col-lg"> </div>
+  </div>
+</div>
+		<script src="./src/main.js"></script>
+	</body>
+</html>
